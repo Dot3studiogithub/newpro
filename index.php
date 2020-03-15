@@ -6,6 +6,7 @@
     <title>Dot3studio</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.4.1.js"></script>
@@ -46,9 +47,10 @@
 </nav>
 
 <div class="row d-flex align-items-center ">
-    <div class="col-md-8 offset-md-2 text-center my-5">
+    <div class="col-md-8 offset-md-2 text-center dokari">
         <div class="display-4 text-uppercase text-secondary my-3 tommy">welcome To <span class="text-warning">Dot3studio</span></div>
         <div class="h1 text-center text-secondary my-3 text-uppercase tommy"> we are <span class="type text-danger h1"></span></div>
+        <div class="h1 my-5 animated infinite bounce delay-2s"><i class="fas fa-hand-point-down text-warning"></i></div>
     </div>
 </div>
 </div>

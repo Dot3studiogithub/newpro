@@ -8,7 +8,7 @@
 /* main-header22 */
 
 .main-header22{
-    height: 100vh;
+    height: 900px;
     background: #070023;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 86%, 54% 98%, 23% 88%, 0 100%);
 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 86%, 54% 98%, 23% 88%, 0 100%);
@@ -16,4 +16,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 77% 86%, 54% 98%, 23% 88%, 0 100%)
 
 .tommy{
     font-family: 'Fugaz One', cursive;
+}
+.dokari{
+    margin-top: 100px;
 }
