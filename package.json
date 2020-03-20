@@ -1,0 +1,19 @@
+{
+  "name": "dot3studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dot3studiogithub/newpro.git"
+  },
+  "author": "kapil dabas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dot3studiogithub/newpro/issues"
+  },
+  "homepage": "https://github.com/Dot3studiogithub/newpro#readme"
+}

@@ -1,35 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dot3studio</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+<?php $page='home';
+ include("includes/header.php");?>
 
-    <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/all.js"></script>
-  <script src="js/typed.js"></script>
-    
-</head>
-<body>
-<div class="container-fluid main-header22">
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="index.php">
+  <img src="images/KUPALA LOGO-01.PNG" alt="" width="120px">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      <li class="nav-item <?php if($page == 'home'){echo 'active';}?>">
+        <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">PORTFOLIO</a>
+      <li class="nav-item <?php if($page == 'portfolio'){echo 'active';}?>">
+        <a class="nav-link" href="portfolio.php">PORTFOLIO</a>
       </li>
       
       <li class="nav-item">
@@ -46,14 +32,45 @@
   </div>
 </nav>
 
-<div class="row d-flex align-items-center ">
-    <div class="col-md-8 offset-md-2 text-center dokari">
-        <div class="display-4 text-uppercase text-secondary my-3 tommy">welcome To <span class="text-warning">Dot3studio</span></div>
-        <div class="h1 text-center text-secondary my-3 text-uppercase tommy"> we are <span class="type text-danger h1"></span></div>
-        <div class="h1 my-5 animated infinite bounce delay-2s"><i class="fas fa-hand-point-down text-warning"></i></div>
+<section class="post-section">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="text-center">
+  <div class="display-4 tommy text-warning">DOT3STUDIO</div>
+  <div class="h1 text-light">WE ARE <span class="type text-danger"></span></div>
+  <button class="btn btn-outline-primary">DISCOVER ME</button>
+</div>
+
+</div><!-- text div -->
+
+<div class="col-md-6 my-5  text-center">
+  <div class="text-center">
+  <img src="images/banner.png" class=" mx-auto d-block" width="600px">
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="user-post-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 my-5">
+      <div class="card" style="width: 18rem;">
+  <img src="" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
+</section>
 
 
 
