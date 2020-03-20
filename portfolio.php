@@ -15,17 +15,34 @@ include("includes/navbar.php");
 
             </div>
             <div class="col-lg-7 col-md-6 text-center">
-            <div class="display-3 text-center my-5">KAPIL DABAS</div>
+            <div class="display-3 text-center my-5 my-name">KAPIL DABAS</div>
 
-            <div class="h5 text-center">Web designer | <span>Web Developer |</span> <span>Free lancer  |</span></div>
-
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link social-link">
-                        <i class="fab fa-facebook-f text-secondary"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="h5 text-center text-light ">Web designer | <span class=""> Web Developer |</span> <span class="">Free lancer  |</span></div>
+              
+            <ul class="nav justify-content-center my-5">
+            <li class="nav-item">
+    <a class="nav-link my-link" href="#">
+        <i class="fab fa-facebook-f fa-2x text-light" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link my-link" href="#">
+        <i class="fab fa-twitter fa-2x text-light" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link my-link" href="#">
+        <i class="fab fa-github fa-2x text-light" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link my-link" href="#">
+        <i class="fas fa-envelope fa-2x text-light" aria-hidden="true"></i>
+    </a>
+  </li>
+ 
+</ul>
+          
             </div>
         </div>
     </div>
