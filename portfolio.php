@@ -47,3 +47,5 @@ include("includes/navbar.php");
         </div>
     </div>
 </section>
+
+<?php include("includes/footer.php");?>

@@ -99,3 +99,16 @@ body{
 .web-designer:hover{
     color: darkgoldenrod;
 }
+
+
+/* about page section */
+
+.about-section{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.skillsection{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
