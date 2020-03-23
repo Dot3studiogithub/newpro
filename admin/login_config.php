@@ -38,10 +38,11 @@ if(isset($_POST['login']))
                 else{
 
                     ?>
-                    <script>
-                    alert("invailed email and password");
-                    </script>
-                 <?php
+                        <script>
+                        location.replace("index.php");
+                        alert("innvailed email and password");
+                        </script>
+                        <?php
 
                 }
        
@@ -49,9 +50,10 @@ if(isset($_POST['login']))
 
     }
     else{
-
+         
         ?>
            <script>
+           location.replace("index.php");
            alert(" somthing went wrong");
            </script>
         <?php
