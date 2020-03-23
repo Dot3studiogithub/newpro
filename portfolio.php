@@ -40,6 +40,12 @@ include("includes/navbar.php");
         <i class="fas fa-envelope fa-2x text-light" aria-hidden="true"></i>
     </a>
   </li>
+
+  <li class="nav-item">
+    <a class="nav-link my-link" href="#">
+        <i class="fab fa-youtube fa-2x text-light" aria-hidden="true"></i>
+    </a>
+  </li>
  
 </ul>
           

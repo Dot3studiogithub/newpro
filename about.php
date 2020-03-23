@@ -35,7 +35,7 @@ VALUEABLE ADVICES WITH HAPPYNESS.
                     <label for="" class="text-success">HTML</label>
 
                     <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated myhtml " role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ VALUEABLE ADVICES WITH HAPPYNESS.
                     <label for="" class="text-warning">CSS</label>
 
                     <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90                          %</div>
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated mycss" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90                          %</div>
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@ VALUEABLE ADVICES WITH HAPPYNESS.
                     <label for="" class="text-info">JAVASCRIPT</label>
 
                     <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated myjs" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@ VALUEABLE ADVICES WITH HAPPYNESS.
                     <label for="" class="text-danger">PHP</label>
 
                     <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated myphp" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
                     </div>
                 </div>
                
@@ -67,5 +67,17 @@ VALUEABLE ADVICES WITH HAPPYNESS.
         </div>
     </div>
 </section>
+
+
+<script>
+$(document).ready(function(){
+$('.myhtml').animate({width: '95%'}, 200);
+$('.mycss').animate({width: '90%'}, 200);
+$('.myjs').animate({width: '75%'}, 200);
+$('.myphp').animate({width: '65%'}, 200);
+
+});
+
+</script>
 
 <?php include("includes/footer.php");?>

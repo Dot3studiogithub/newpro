@@ -39,7 +39,7 @@
 <div class="text-center">
   <div class="display-4 tommy text-warning">DOT3STUDIO</div>
   <div class="h1 text-light">WE ARE <span class="type text-danger"></span></div>
-  <button class="btn btn-outline-primary">DISCOVER ME</button>
+  <a  href="portfolio.php" class="btn btn-outline-primary">DISCOVER ME</a>
 </div>
 
 </div><!-- text div -->
