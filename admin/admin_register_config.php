@@ -38,13 +38,56 @@ if(isset($_POST['submit']))
     $con_crypass = password_hash($confirm_pass, PASSWORD_BCRYPT);
 
 
-    $selquery = "SELECT "
+    $selquery = "SELECT * FROM admin_register WHERE email='admin_email'";
+    $selsql = mysqli_query($config, $selquery);
 
-    $query = "INSERT INTO `admin_register`(`first_name`, `last_name`, `email`, `contact_no`, `password`, `confirm_pass`)
-               VALUES ($first_name,$last_name,$admin_email,$admin_number,$crypass,$con_crypass)";
-               $sql = mysqli_query($config,$query);
+    $countemail = mysqli_num_rows($selsql);
 
-               $total_rows= mysqli_num_rows($sql);
+    if($countemail > 0)
+    {
+       ?>
+        <script> alret("email already exists")</script>
+
+        <?php
+    }
+    else{
+
+        if($ad_pass === $confirm_pass)
+        {
+            $query = "INSERT INTO `admin_register`(`first_name`, `last_name`, `email`, `contact_no`, `password`, `confirm_pass`)
+            VALUES ('$first_name','$last_name','$admin_email','$admin_number','$crypass','$con_crypass')";
+            $sql = mysqli_query($config,$query);
+
+               if($sql)
+               {
+                  header("Location: index.php");
+               }
+
+               else{
+                  header("Location: register.php");
+                ?>
+                <script>
+                      alret("you are not register");
+                      </script>
+
+         <?php
+
+               }
+        }
+
+        else{
+            ?>
+                <script>
+                alret("password are not match");
+                </script>
+
+            <?php
+        }
+    }
+
+    
+
+              
 
 
 
