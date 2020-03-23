@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
     if($countemail > 0)
     {
        ?>
-        <script> alret("email already exists")</script>
+        <script> alert("email already exists")</script>
 
         <?php
     }
@@ -67,7 +67,7 @@ if(isset($_POST['submit']))
                   header("Location: register.php");
                 ?>
                 <script>
-                      alret("you are not register");
+                      alert("you are not register");
                       </script>
 
          <?php
@@ -78,7 +78,7 @@ if(isset($_POST['submit']))
         else{
             ?>
                 <script>
-                alret("password are not match");
+                alert("password are not match");
                 </script>
 
             <?php

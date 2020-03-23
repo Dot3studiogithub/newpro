@@ -32,20 +32,20 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6 offset-md-3 myloginform">
-<form action="">
+<form action="login_config.php" method="POST">
 <div class="form-group">
 <div class="h1 text-center text-light text-uppercase mt-4 mb-5">ready to login</div>
     <label for="InputEmail" class="text-light mr-2"> <i class="fas fa-envelope text-light mr-2"></i>Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="l_email" autocomplete="off" required>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="Password" class="text-light mr-3"><i class="fas fa-key text-light"></i> Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" class="form-control" id="exampleInputPassword1" name="l_password"autocomplete="off" required>
   </div>
   
   <div class="text-center">
-  <button type="submit" class="btn btn-outline-warning w-50 ">LOGIN</button>
+  <button type="submit" class="btn btn-outline-warning w-50 " name="login">LOGIN</button>
   </div>
   <small id="" class="form-text text-muted my-2">if you have don,t an account ? please register</small>
 </form>
