@@ -41,7 +41,7 @@
   </div>
   <div class="form-group">
     <label for="Password" class="text-light mr-3"><i class="fas fa-key text-light"></i> Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="l_password"autocomplete="off" required>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="l_password" autocomplete="off" required>
   </div>
   
   <div class="text-center">

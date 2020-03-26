@@ -13,11 +13,12 @@ include("db_config.php");
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/all.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/popper.js"> </script>
+  <script src="js/chart.js"> </script>
     
 </head>
 <body>
