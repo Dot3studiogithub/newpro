@@ -1,5 +1,5 @@
 <?php 
-
+$page='Dashboard';
 include("includes/header.php");
 
 if(!isset($_SESSION['user']))

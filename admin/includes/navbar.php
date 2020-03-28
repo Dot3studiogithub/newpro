@@ -8,31 +8,31 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+      <li class="nav-item <?php if($page =='Dashboard'){echo 'active';}?>">
+        <a class="nav-link neww-link" href="home.php">Dashboard <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Post</a>
+      <li class="nav-item <?php if($page =='post'){echo 'active';}?>">
+        <a class="nav-link neww-link" href="post.php">Post</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Comments</a>
+      <li class="nav-item <?php if($page =='comments'){echo 'active';}?>">
+        <a class="nav-link neww-link" href="comments.php">Comments</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">chart</a>
+      <li class="nav-item <?php if($page =='post'){echo 'active';}?>">
+        <a class="nav-link neww-link" href="#">chart</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown <?php if($page =='post'){echo 'active';}?>">
+        <a class="nav-link neww-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           user
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Profile</a>
           <a class="dropdown-item" href="#">Messages</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="logout.php">Logout</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Setting</a>
+      <li class="nav-item <?php if($page =='post'){echo 'active';}?>">
+        <a class="nav-link neww-link" href="#">Setting</a>
       </li>
     </ul>
    <ul class="navbar-nav">
