@@ -28,11 +28,11 @@ if(!isset($_SESSION['user']))
 </div><!-- end btn 1 -->
 
 <div class="col-md-4 my-2">
-<a href="#" class="btn btn-outline-primary w-100"><i class="fas fa-edit fa-lg text-light mr-2"></i>Post</a>
+<a href="#" class="btn btn-outline-warning w-100"><i class="fas fa-edit fa-lg text-light mr-2"></i>Post</a>
 </div><!-- end btn 2 -->
 
 <div class="col-md-4 my-2">
-<a href="#" class="btn btn-outline-primary w-100"><i class="fas fa-trash fa-lg text-light mr-2"></i>Post</a>
+<a href="#" class="btn btn-outline-danger w-100"><i class="fas fa-trash fa-lg text-light mr-2"></i>Post</a>
 </div><!-- end btn 3 -->
 </div>
 </div>
@@ -97,57 +97,64 @@ if(!isset($_SESSION['user']))
 <!-- modal  -->
 
 
-<div class="modal fade" id="createpostmodal" tabindex="-1" role="dialog">
+
+<!-- Modal -->
+<div class="modal fade" id="createpostmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-primary">Create post</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Create Post Here.</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-      <div class="container">
-      <form action="" method="" enctype="multipart/form-data">
-      <div class="form-row">
-      <div class="form-group col-md-6">
-      <input type="text" class="form-control" name="writeTitle"  placeholder="Title" autocomplete="" required>
-      </div>
-      <div class="form-group col-md-6">
-      <input type="text" class="form-control" name="writeSubject"  placeholder="Subject" autocomplete="" required>
+      <form action="create_post_config.php" method="POST" enctype="multipart/form-data" id="myform">
+      <div class="form-group my-3">
+      <label for="title">Post Title</label>
+      <input type="text" class="form-control" name="post_title" autocomplete="off" required>
       </div>
 
-      <div class="form-group col-md-6">
-      <select id="postCategory" class="form-control" name="selectCategory">
-        <option>choose..</option>
-        <option>html project</option>
-        <option>php project</option>
-        <option>javascript projects</option>
-        <option>Other..</option>
+      <div class="form-group my-3">
+      <label for="title">Post Subject</label>
+      <input type="text" class="form-control" name="post_subject" autocomplete="off" required>
+      </div>
+
+      <div class="form-group my-3">
+      <label for="title">Post Category</label>
+      <select name="post_cate" id="" class="form-control">
+      <option value="">choose one..</option>
+      <option value="html">html</option>
+      <option value="php">php</option>
+      <option value="javascript">javascript</option>
+      <option value="other">other..</option>
       </select>
       </div>
 
-      <div class="form-group col-md-6">
-      <input type="file" class="form-control" autocomplete="off" required name="selectfile">
+      <div class="form-group my-3">
+      <label for="title">Post image</label>
+      <input type="file" class="form-control" name="post_img" autocomplete="off" required>
       </div>
+
+      <div class="form-group my-3">
+      <label for="title">Post content</label>
+       <textarea name="post_content" id="" cols="30" rows="10" class="form-control" autocomplete="off" required></textarea>
       </div>
-      <div class="form-group col-md-12">
-      <textarea name="" id="" cols="30" rows="10" class="form-control" name="writepost"></textarea>
+
+
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success" name="createpost" id="mysubmit">Create Post</button>
+        </form><!-- end form -->
+      </div><!-- end modal body -->
       </div>
-      </form>
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times mr-2 fa-lg text-light"></i>Cencel</button>
-        <button type="button" class="btn btn-primary">Create Post</button>
-      </div>
-    </div>
   </div>
 </div>
 
 
 
 <!-- ennd modal  -->
+
+
 
 
 <?php include("includes/footer.php");?>
