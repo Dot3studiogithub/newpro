@@ -62,3 +62,34 @@ background-attachment: fixed;
 background-size: cover;
 
 }
+
+
+
+/* ///////////////////////////////////////////////post create page ////////////////// */
+
+#postTitle{
+    background-color: transparent!important;
+    border: 3px solid #007bff;
+    border-radius: 20px;
+    color: #007bff!important;
+}
+#postSub{
+    background-color: transparent!important;
+    border: 3px solid #dc3545;
+    border-radius: 20px;
+}
+#postCate{
+    background-color: transparent!important;
+    border: 3px solid #17a2b8;
+    border-radius: 20px;
+}
+#postImg{
+    background-color: transparent!important;
+    border: 3px solid #ffc107;
+    border-radius: 20px;
+}
+#postCont{
+    background-color: transparent!important;
+    border: 3px solid #6c757d;
+    border-radius: 20px;
+}

@@ -36,7 +36,7 @@ if(isset($_POST['createpost']))
 
     if($data)
     {
-        header("Location: post.php");
+        header("Location: create.post.php");
         ?>
         <script>
         alert("you have a post");
@@ -45,7 +45,7 @@ if(isset($_POST['createpost']))
 
     }
     else {
-        header("Location: post.php");
+        header("Location: create.post.php");
         ?>
            <script>
            alert("sorry ");
