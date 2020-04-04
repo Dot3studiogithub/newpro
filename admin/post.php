@@ -33,30 +33,25 @@ if(!isset($_SESSION['user']))
 
 <?php include("includes/navbar.php");?>
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="home.php">Dashboard</a></li>
+<div class="container-fluid ">
+<div class="row d-flex align-items-center">
+  <div class="col-md-9">
+  <nav aria-label="breadcrumb bg-transparent">
+  <ol class="breadcrumb bg-transparent">
+    <li class="breadcrumb-item"><a href="home.php" class="text-danger">Dashboard</a></li>
     <li class="breadcrumb-item active" aria-current="page">Post</li>
   </ol>
 </nav>
+  </div>
 
-<section class="create-itemes my-5">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-4 my-2">
-<a href="create.post.php"  class="btn btn-outline-primary w-100"><i class="fas fa-plus fa-lg text-light mr-2"></i>Post</a>
-</div><!-- end btn 1 -->
-
-<div class="col-md-4 my-2">
-<a href="#"  class="btn btn-outline-warning w-100"><i class="fas fa-edit fa-lg text-light mr-2"></i>Post</a>
-</div><!-- end btn 2 -->
-
-<div class="col-md-4 my-2">
-<a href="#" class="btn btn-outline-danger w-100"><i class="fas fa-trash fa-lg text-light mr-2"></i>Post</a>
-</div><!-- end btn 3 -->
+  <div class="col-md-3 text-center  ">
+    <a href="create.post.php" class="btn btn-outline-primary mb-2">Create Post</a>
+  </div>
 </div>
+
 </div>
-</section>
+
+
 
 <section class="all-post my-5">
 <div class="container">

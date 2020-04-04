@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     background: #010006;
+    font-family: 'Rockwell', sans-serif;
 }
 
 .myloginform{
@@ -9,6 +11,7 @@ body{
     border: 5px solid #F6B908;
     box-shadow: 0 0 13px #f6b908;
 }
+
 .myemail{
    border-radius: 20px;
 }
@@ -71,25 +74,40 @@ background-size: cover;
     background-color: transparent!important;
     border: 3px solid #007bff;
     border-radius: 20px;
-    color: #007bff!important;
+    transition: .2s ease-in-out;
+}
+#postTitle:hover{
+    box-shadow: 0 0 10px #007bff;
 }
 #postSub{
     background-color: transparent!important;
     border: 3px solid #dc3545;
     border-radius: 20px;
 }
+#postSub:hover{
+    box-shadow: 0 0 10px #dc3545;
+}
 #postCate{
     background-color: transparent!important;
     border: 3px solid #17a2b8;
     border-radius: 20px;
+}
+#postCate:hover{
+    box-shadow: 0 0 10px #17a2b8;
 }
 #postImg{
     background-color: transparent!important;
     border: 3px solid #ffc107;
     border-radius: 20px;
 }
+#postImg:hover{
+    box-shadow: 0 0 10px #ffc107;
+}
 #postCont{
     background-color: transparent!important;
-    border: 3px solid #6c757d;
+    border: 3px solid #414141;
     border-radius: 20px;
+}
+#postCont:hover{
+    box-shadow: 0 0 10px #414141;
 }

@@ -12,10 +12,10 @@ if(!isset($_SESSION['user']))
 ?>
 <?php include("includes/navbar.php");?>
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb bg-transparent">
+  <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="home.php">Dashboard</a></li>
     <li class="breadcrumb-item" aria-current="page"><a href="post.php">Post</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Create Post</li>
+    <li class="breadcrumb-item active" aria-current="page">update Post</li>
   </ol>
 </nav>
 
@@ -24,7 +24,7 @@ if(!isset($_SESSION['user']))
  <div class="container-fluid">
  <div class="row">
  <div class="col-md-8 offset-md-2">
- <div class="h1 text-center text-light text-uppercase my-5">Create Post</div>
+ <div class="h1 text-center text-light text-uppercase my-5">update Post</div>
 
 
 <form action="create_post_config.php" method="POST" enctype="multipart/form-data" id="myform">
@@ -65,7 +65,7 @@ if(!isset($_SESSION['user']))
       </div>
 
       <div class="text-center">
-      <button type="submit" class="btn btn-outline-success w-50" name="createpost" id="mysubmit">Create Post</button></div>
+      <button type="submit" class="btn btn-outline-warning w-50" name="updatepost" id="mysubmit">Create Post</button></div>
       
         
         </form><!-- end form -->
