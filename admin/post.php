@@ -105,7 +105,7 @@ if(!isset($_SESSION['user']))
       </td>
 
       <td>
-      <a href="" class="btn btn-danger">Delete</a>
+      <a href="delete.post.php?id=<?php echo $newres['id'];?>" class="btn btn-danger">Delete</a>
       </td>
       </tr>
 
