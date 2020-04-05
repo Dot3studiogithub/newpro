@@ -65,7 +65,7 @@ if(!isset($_SESSION['user']))
       <th scope="col">SR</th>
       <th scope="col">Title</th>
       <th scope="col">subject</th>
-      
+      <th scope="col">Category</th>
       <th scope="col">image</th>
       <th scope="col">Update</th>
       <th scope="col">Delete</th>
@@ -93,12 +93,15 @@ if(!isset($_SESSION['user']))
       <td>
       <?php echo $newres['post_subject'];?>
       </td>
+      <td>
+      <?php echo $newres['post_cat'];?>
+      </td>
       
       <td>
       <img src="<?php echo $newres['post_img'];?>" alt="" width="50px" height="50px">
       </td>
       <td>
-      <a href="post.php?id=<?php echo $newres['id'];?>" data-toggle="modal" data-target="#editpostmodal" class="btn btn-info">Update</a>
+      <a href="update.post.php?id=<?php echo $newres['id'];?>"  class="btn btn-info">Update</a>
       </td>
 
       <td>
