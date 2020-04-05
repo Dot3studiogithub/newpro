@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@ body{
     background: #010006;
     margin: 0;
     padding: 0;
+    font-family: 'Rockwell', sans-serif;
 }
 
 /* main-header22 */

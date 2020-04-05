@@ -18,14 +18,14 @@
         <a class="nav-link" href="portfolio.php">PORTFOLIO</a>
       </li>
       
-      <li class="nav-item">
-        <a class="nav-link " href="#">ABOUT US</a>
+      <li class="nav-item <?php if($page == 'about us'){echo 'active';}?>">
+        <a class="nav-link " href="about.php">ABOUT US</a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="#">SERVICES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">CONTACT US</a>
+        <a class="nav-link btn btn-outline-success" href="#">CONTACT US</a>
       </li>
     </ul>
     

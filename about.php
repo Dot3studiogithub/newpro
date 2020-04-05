@@ -16,7 +16,7 @@ include("includes/navbar.php");
 <div class="col-lg-7 col-md-6 my-3">
 <div class="text-center">
 <div class="h6 text-secondary text-justify text-light">
-     WE ARE <span class="text-warning">DOT3STUDIO</span> ETABLISHED 2019 IN INDIA AND WE ARE A TEAM OF WEB DEVELOPERS AND WEB DESIGNER. WE ARE ALWAYS LEARN HOW TO CREATE BEAUTIFUL WEB LAYOUTS AND DEVELOPE IT WITH YOUR 
+     WE ARE <span class="text-warning text-uppercase">DOT3STUDIO</span> ETABLISHED 2019 IN INDIA FOUNDED By <span class="text-warning text-uppercase">Mr. Kapil Dabas</span> AND WE ARE A TEAM OF WEB DEVELOPERS AND WEB DESIGNER. WE ARE ALWAYS LEARN HOW TO CREATE BEAUTIFUL WEB LAYOUTS AND DEVELOPE IT WITH YOUR 
 VALUEABLE ADVICES WITH HAPPYNESS.
 </div>
 </div>
@@ -62,7 +62,22 @@ VALUEABLE ADVICES WITH HAPPYNESS.
                     <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated myphp" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
                     </div>
                 </div>
+
+                <div class="my-4">
+                    <label for="" class="text-primary">Adobe XD</label>
+
+                    <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated myxd" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
                
+                <div class="my-4">
+                    <label for="" class="text-danger">Adobe illustrator</label>
+
+                    <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated myill" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -75,6 +90,8 @@ $('.myhtml').animate({width: '95%'}, 200);
 $('.mycss').animate({width: '90%'}, 200);
 $('.myjs').animate({width: '75%'}, 200);
 $('.myphp').animate({width: '65%'}, 200);
+$('.myxd').animate({width: '65%'}, 200);
+$('.myill').animate({width: '65%'}, 200);
 
 });
 

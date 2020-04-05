@@ -10,12 +10,12 @@ include("includes/navbar.php");
         <div class="row">
             <div class="col-lg-5 col-md-6">
             <div class="text-center">
-            <img src="images/portfolio.jpg" alt="" class="portfolio-image">
+            <img src="images/my-new-logo.png" alt="" class="portfolio-image">
             </div>
 
             </div>
             <div class="col-lg-7 col-md-6 text-center">
-            <div class="display-3 text-center my-5 my-name">KAPIL DABAS</div>
+            <div class="display-3 text-center my-5 my-name">TEAM OF BEST</div>
 
             <div class="h5 text-center text-light ">Web designer | <span class=""> Web Developer |</span> <span class="">Free lancer  |</span></div>
               
