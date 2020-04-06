@@ -21,8 +21,8 @@
       <li class="nav-item <?php if($page == 'about us'){echo 'active';}?>">
         <a class="nav-link " href="about.php">ABOUT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">SERVICES</a>
+      <li class="nav-item <?php if($page == 'services'){echo 'active';}?>">
+        <a class="nav-link " href="services.php">SERVICES</a>
       </li>
       <li class="nav-item">
         <a class="nav-link btn btn-outline-success" href="#">CONTACT US</a>
