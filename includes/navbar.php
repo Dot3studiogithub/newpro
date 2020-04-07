@@ -22,7 +22,7 @@
         <a class="nav-link " href="services.php">SERVICES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-outline-success" href="#">CONTACT US</a>
+        <a class="btn btn-outline-success" href="contact.php">CONTACT US</a>
       </li>
     </ul>
     

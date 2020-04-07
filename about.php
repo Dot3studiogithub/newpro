@@ -9,13 +9,13 @@ include("includes/navbar.php");
 <div class="row">
 <div class="col-lg-5 col-md-6">
 <div class="text-center">
-<div class="display-4 text-secondary">ABOUT ME</div>
+<div class="display-4 text-secondary" data-aos="fade-right">ABOUT ME</div>
 </div>
 </div><!-- END COL-->
 
 <div class="col-lg-7 col-md-6 my-3">
 <div class="text-center">
-<div class="h6 text-secondary text-justify text-light">
+<div class="h6 text-secondary text-justify text-light" data-aos="zoom-in" data-aos-delay="1000">
      WE ARE <span class="text-warning text-uppercase">DOT3STUDIO</span> ETABLISHED 2019 IN INDIA FOUNDED By <span class="text-warning text-uppercase">Mr. Kapil Dabas</span> AND WE ARE A TEAM OF WEB DEVELOPERS AND WEB DESIGNER. WE ARE ALWAYS LEARN HOW TO CREATE BEAUTIFUL WEB LAYOUTS AND DEVELOPE IT WITH YOUR 
 VALUEABLE ADVICES WITH HAPPYNESS.
 </div>
@@ -25,7 +25,7 @@ VALUEABLE ADVICES WITH HAPPYNESS.
 </div>
 </section>
 
-<section class="skillsection my-5">
+<section class="skillsection my-5" data-aos="fade-left">
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">

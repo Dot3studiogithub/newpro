@@ -8,6 +8,14 @@
 </div>
 </div>
 </div>
+<script>
+  AOS.init({
+    duration: 2000,
+    delay: 1,
+   
+
+  });
+</script>
 
 </body>
 </html>
