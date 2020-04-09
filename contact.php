@@ -19,7 +19,7 @@ include("includes/navbar.php");
 <button type="submit" name="send" class="btn btn-primary my-3">Sand Message</button>
 </div>
 <div class="col-md-6">
-    <textarea name="cmsg" id="" class="form-control mb-5" cols="30" rows="10" placeholder="* Message"></textarea>
+    <textarea name="cmsg" id="" class="form-control mb-5" cols="30" rows="10" placeholder="* Message" required></textarea>
 </div>
 </div>
 </form>

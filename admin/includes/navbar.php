@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
   <a class="navbar-brand" href="home.php">
   <img src="images/my-new-logo.png" alt="" width="130px">
@@ -26,7 +27,6 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Profile</a>
-          <a class="dropdown-item" href="#">Messages</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="logout.php">Logout</a>
         </div>
@@ -35,12 +35,42 @@
         <a class="nav-link neww-link" href="#">Setting</a>
       </li>
     </ul>
-   <ul class="navbar-nav">
+   <ul class="navbar-nav mr-3">
+   <li class="nav-item dropdown">
+   <a href="" class="nav-link neww-link mt-2" data-toggle="dropdown" id="messagedropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-envelope fa-lg"></i></a>
+   <div class="dropdown-menu" aria-labelledby="messagedropdown">
+          <div class="text-center">
+          <div class="message-heading">Messages <span class="text-primary">19</span></div>
+          </div>
+          <div class="message-body mt-3">
+          <?php
+          
+          $sql = "SELECT * FROM contact_message";
+          $data = mysqli_query($config,$sql);
+          
+          
+          ?>
+          <ul class="list-group text-center">
+          <?php
+          while($re = mysqli_fetch_assoc($data))
+          {
+            ?>
+            <li class="list-group-item"><?php echo $re['cmessage'];?> <span>by</span><span class="text-primary ml-2"><?php echo $re['cname'];?></span></li>
+            <?php
+          }
+          
+          ?>
+  
+  
+</ul>
+          </div>
+   </li>
    <li class="nav-item">
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
         <img src="images/portfolio.jpg" alt="" width="40" class="img-fluid myuserpic">
         </a>
       </li>
+      <li class="nav-item">
       <a class="nav-link text-warning mt-2" href="#" tabindex="-1" aria-disabled="true">
             <?php echo $_SESSION['user'];?>
         </a>
@@ -48,3 +78,25 @@
    </ul>
   </div>
 </nav>
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="messagemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
