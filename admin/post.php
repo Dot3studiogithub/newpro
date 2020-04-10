@@ -36,8 +36,8 @@ $gg = mysqli_query($config,$sql);
  <nav aria-label="breadcrumb">
  <ol class="breadcrumb bg-transparent">
     <li class="breadcrumb-item"><a href="home.php">Dashboard</a></li>
-    <li class="breadcrumb-item" aria-current="page"><a href="post.php">Post</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Update Post</li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Post</li>
   </ol>
   </nav>
  </div>
