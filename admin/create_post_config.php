@@ -23,7 +23,7 @@ if(isset($_POST['createpost']))
     $imgname = $postImg['name'];
     $imgtmp = $postImg['tmp_name'];
 
-    $folder = 'postimage/'.$imgname;
+    $folder = '../postimage/'.$imgname;
 
     move_uploaded_file($imgtmp,$folder);
 
@@ -36,7 +36,7 @@ if(isset($_POST['createpost']))
 
     if($data)
     {
-        header("Location: create.post.php");
+        header("Location:post.php");
         ?>
         <script>
         alert("you have a post");
@@ -45,7 +45,7 @@ if(isset($_POST['createpost']))
 
     }
     else {
-        header("Location: create.post.php");
+        header("Location:post.php");
         ?>
            <script>
            alert("sorry ");
