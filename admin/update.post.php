@@ -31,6 +31,7 @@ $id = $_GET['id'];
 $sql = "SELECT * FROM create_post_table WHERE id='$id'";
 $data1 = mysqli_query($config,$sql);
 $result = mysqli_fetch_assoc($data1);
+$oldimg = $result['post_img'];
 
 if(isset($_POST['update']))
 {
@@ -53,8 +54,11 @@ if(isset($_POST['update']))
 
     $imgname = $postImg['name'];
     $imgtmp = $postImg['tmp_name'];
+    
+     unlink("../postimage/$oldimg");
+    $folder = '../postimage/'.$imgname;
 
-    $folder = 'postimage/'.$imgname;
+    
 
     move_uploaded_file($imgtmp,$folder);
 
@@ -132,7 +136,7 @@ if(isset($_POST['update']))
       </div>
 
       <div class="form-group my-3 col-md-6">
-      <img src="<?php echo $result['post_img'];?>" alt="" width="60px" height="60px">
+      <img src="../postimage/<?php echo $result['post_img'];?>" alt="" width="60px" height="60px">
       <label for="title" class="text-warning">Post image</label>
       <input type="file" class="form-control text-warning " name="post_img" id="postImg" autocomplete="off" required>
       </div>
@@ -140,7 +144,7 @@ if(isset($_POST['update']))
       <div class="form-row">
       <div class="form-group my-3 col-md-12">
       <label for="title" class="text-secondary">Post content</label>
-       <textarea name="post_content" id="postCont" cols="30" rows="10" class="form-control" autocomplete="off" required>
+       <textarea name="post_content"  cols="30" rows="10" class="form-control" autocomplete="off" required>
        <?php echo $result['post_content'];?>
        </textarea>
       </div>

@@ -60,7 +60,7 @@ if(!isset($_SESSION['user']))
       <div class="form-row">
       <div class="form-group my-3 col-md-12">
       <label for="title" class="text-secondary">Post content</label>
-       <textarea name="post_content" id="postCont" cols="30" rows="10" class="form-control" autocomplete="off" required></textarea>
+       <textarea name="post_content"  cols="30" rows="10" class="form-control" autocomplete="off" required></textarea>
       </div>
       </div>
 

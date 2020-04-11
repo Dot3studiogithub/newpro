@@ -19,6 +19,7 @@ include("db_config.php");
   <script src="js/typed.js"></script>
   <script src="js/popper.js"> </script>
   <script src="js/chart.js"> </script>
+  
     
 </head>
 <body>

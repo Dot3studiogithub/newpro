@@ -72,7 +72,7 @@ while($res = mysqli_fetch_assoc($gg))
   <td><?php echo $res['post_title'];?></td>
   <td><?php echo $res['post_subject'];?></td>
   <td>
-  <img src="<?php echo $res['post_img'];?>" alt="" width="50px" height="50px">
+  <img src="../postimage/<?php echo $res['post_img'];?>" alt="" width="50px" height="50px">
   </td>  
   <td><a href="update.post.php?id=<?php echo $res['id'];?>" class="btn btn-warning">update</a></td>
   <td><a href="delete.post.php?id=<?php echo $res['id'];?>" class="btn btn-danger">delete</a></td>
