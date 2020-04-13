@@ -70,14 +70,17 @@
     while($re = mysqli_fetch_assoc($data))
     {
       ?>
-       <div class="col-md-3 my-5">
+       <div class="col-md-3 my-5 mx-3">
       <div class="card" style="width: 18rem;">
-  <img src="postimage/<?php echo $re['post_img'];?>" class="card-img-top" >
+     <div class="text-center">
+     <i class="fas fa-file-pdf fa-4x text-danger mt-3"></i>
+     </div>
   <div class="card-body">
     <h5 class="card-title text-center"><?php echo $re['post_title'];?></h5>
     
     <div class="text-center">
-    <a href="single_post.php?id=<?php echo $re['id'];?>" class="btn btn-primary">View</a></div>
+    <a href="postimage/<?php echo $re['post_img'];?>" target="blank" class="btn btn-primary">View</a>
+    </div>
   </div>
 </div>
       </div>
