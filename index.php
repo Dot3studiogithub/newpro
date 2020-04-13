@@ -1,8 +1,23 @@
 <?php $page='home';
  include("includes/header.php");?>
  <?php
+ $t = "SELECT * FROM create_post_table";
+ $d = mysqli_query($con,$t);
+ $total = mysqli_num_rows($d);
+ $start = 0;
+ $limit = 8;
  
- $sql = "SELECT * FROM create_post_table";
+ $page = ceil($total/$limit);
+ if(isset($_GET['id']))
+ {
+   $id = $_GET['id'];
+   $start = ($id-1)*$limit;
+ }
+ else{
+   $id = 1;
+ }
+ 
+ $sql = "SELECT * FROM create_post_table LIMIT $start,$total";
  $data = mysqli_query($con,$sql);
  
 ?>
@@ -94,7 +109,74 @@
   </div>
 </section>
 
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+   
+    <?php
+    
+    
+    if($id > 1)
+    {
+      ?>
+         <li class="page-item">
+      <a class="page-link" href="?id=<?php echo ($id-1);?>">Previous</a>
+    </li>
+      <?php
+    }
+    ?>
 
+   <?php
+   for($i=1; $i<=$page;$i++)
+   {
+     ?>
+       <li class="page-item">
+       <a class="page-link" href="?id=<?php echo $i;?>"><?php echo $i;?></a>
+       </li>
+
+     <?php
+   }
+   
+   ?>
+    
+    <?php
+    if($id!=$page)
+    {
+      ?>
+<li class="page-item">
+      <a class="page-link" href="?id=<?php echo ($id+1);?>">Next</a>
+    </li>
+           
+      <?php
+    }
+    
+    ?>
+    
+    
+  </ul>
+</nav>
+
+<section class="comment-section my-5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 offset-md-2">
+<form action="comment.php" method="POST">
+<div class="form-group">
+<input type="email" class="form-control mb-3" name="commentemail" placeholder="E-mail" autocomplete="off" required>
+</div>
+
+<div class="form-group">
+<textarea name="commenttextarea" id="" cols="30" rows="10" class="form-control" placeholder="Comment..." required></textarea>
+</div>
+<div class="text-center">
+<button type="submit" class="btn btn-outline-success" name="comment">comment</button>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+</section>
 
 
 
